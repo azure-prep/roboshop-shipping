@@ -8,3 +8,6 @@ jobs:
     uses:   azure-prep/roboshop-github-actions/.github/workflows/ci-dev.yml@main
     with:
       appType: 'Java'
+      appName: 'shipping'
+    secrets:
+      vault_token: ${{ secrets.TOKEN }}
